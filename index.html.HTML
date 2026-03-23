@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Discover Papua New Guinea — Tourism Guide</title>
+    <meta name="description" content="A concise travel guide to Papua New Guinea: culture, nature, destinations, and practical tips." />
+    <style>
+      :root{--accent:#00796b;--muted:#666;--bg:#f7fbfb;--card:#ffffff}
+      html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;background-color:var(--bg);color:#111}
+      body{background-image:url("imgs/island-view.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed;min-height:100vh}
+      header{background:linear-gradient(90deg,var(--accent),#004d40);color:#fff;padding:3rem 1rem}
+      .container{max-width:1100px;margin:0 auto;padding:1rem}
+      .brand{display:flex;align-items:center;gap:.75rem}
+      .brand h1{margin:0;font-size:1.25rem}
+      nav{margin-top:.75rem}
+      nav a{color:rgba(255,255,255,.95);margin-right:1rem;text-decoration:none}
+      .hero{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center}
+      .hero .intro{background:rgba(255,255,255,.06);padding:1.25rem;border-radius:8px}
+      .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+      .card{background:var(--card);padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(10,20,30,.06)}
+      h2{margin:.25rem 0 .75rem 0}
+      p{color:var(--muted);line-height:1.5}
+      .tag{display:inline-block;background:#e6fffb;color:#004d40;padding:.25rem .5rem;border-radius:6px;font-weight:600;font-size:.8rem}
+      .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.5rem}
+      .gallery img{width:100%;height:150px;object-fit:cover;border-radius:8px}
+      footer{padding:2rem 0;text-align:center;color:var(--muted)}
+      @media(min-width:700px){.hero{grid-template-columns:1fr 420px}}
+      .cta{display:inline-block;background:#ff7043;color:#ffffff;padding:.6rem .9rem;border-radius:8px;text-decoration:none}
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+    <header>
+      <div class="container">
+        <div class="brand">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#fff" opacity=".08"/><path d="M6 17L9 8l6 6 3-8" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <h1>Papua New Guinea</h1>
+            <div style="font-size:.85rem;color:rgba(255,255,255,.85)">Adventure • Culture • Biodiversity</div>
+          </div>
+        </div>
+        <nav>
+          <a href="#top-destinations">Destinations</a>
+          <a href="#culture">Culture</a>
+          <a href="#nature">Nature</a>
+          <a href="#tips">Travel Tips</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" style="margin-top:1.25rem">
+      <section class="hero">
+        <div class="intro card">
+          <span class="tag">Oceania</span>
+          <h2>Discover Papua New Guinea</h2>
+          <p>Papua New Guinea (PNG) is a land of rich cultural diversity, dramatic highland scenery, pristine coral reefs, and world-class biodiversity. From traditional village sing-sings to rugged trekking and remarkable birdlife, PNG rewards travelers who seek authenticity and adventure.</p>
+          <p><strong>Highlights:</strong> Sepik River, Kokoda Track, Tufi fjords, Tari Basin, and the Coral Triangle.</p>
+          <p><a class="cta" href="#top-destinations">Explore highlights</a></p>
+        </div>
+
+        <div class="card" style="margin-top:1rem">
+          <h3>At a Glance</h3>
+          <img src="imgs/rainforest.jpg" alt="Rainforest" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+          <p style="margin:0;color:var(--muted)">Quick snapshot to help you plan a visit.</p>
+          <ul style="padding-left:1rem;margin:.5rem 0 0 0;color:var(--muted)">
+            <li>Region: Oceania</li>
+            <li>Best time to visit: May–October</li>
+            <li>Language: English, Tok Pisin</li>
+          </ul>
+        </div>
+
+        <aside class="card">
+          <h3>Quick Facts</h3>
+          <ul style="padding-left:1rem;margin:0;color:var(--muted)">
+            <img src="imgs/phouse.jpg" alt="Port Moresby" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <li>Capital: Port Moresby</li>
+            <li>Language: English, Tok Pisin, Hiri Motu</li>
+            <li>Currency: Papua New Guinean kina (PGK)</li>
+            <li>Best time to visit: May–October (dry season)</li>
+            <li>Home to over 800 different species</li>
+            <li>Also in the ring of fire.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="top-destinations" style="margin-top:1.5rem">
+        <h2>Top Destinations</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="imgs/kokoda-trail.jpg" alt="Kokoda trail" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <h3>Kokoda Track</h3>
+            <p>The historic Kokoda Track offers a challenging multi-day trek through the Owen Stanley Range, combining WWII history with remote mountain wilderness and warm local hospitality.</p>
+          </div>
+          <div class="card">
+            <img src="imgs/sepik-river.jpg" alt="Sepik river" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <h3>Sepik River</h3>
+            <p>Explore canoe villages, traditional carved spirit houses, and riverside markets along one of the most culturally rich river systems in the world.</p>
+          </div>
+          <div class="card">
+            <img src="imgs/tufi.jpg" alt="Tufi fjords" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <h3>Tufi &ndash; Fjords and Reefs</h3>
+            <p>Tufi offers spectacular fjords, clear water diving, and eco-lodges tucked into dramatic coastal inlets.</p>
+          </div>
+          <div class="card">
+            <img src="imgs/tari-birdwatching.jpg" alt="Tari birdwatching" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <h3>Tari Basin & Birdwatching</h3>
+            <p>Home to the famed birds-of-paradise, the Tari Basin is a must for birdwatchers and cultural encounters with highland communities.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="culture" style="margin-top:1.5rem">
+        <h2>Culture & People</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="imgs/highlands-culture.jpeg" alt="Highlands culture" style="width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <p>The highlands are home to vibrant cultures with elaborate traditional dress, music, and dance. Festivals like the Mount Hagen Show showcase these rich traditions.</p>
+          </div>
+          <div class="card"> 
+            <img src="imgs/newbritain.jpg" alt="New Britain" style="width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <p>Explore the diverse cultures and landscapes of New Britain, including traditional villages and unique wildlife.</p>
+          </div>
+          <div class="card">
+            <img src="imgs/artifacts.jpg" alt="Cultural artifacts" style="width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <p>Explore the rich cultural heritage of Papua New Guinea through its diverse array of traditional artifacts, from intricate carvings to ceremonial objects.</p>
+          </div>
+          <div class="card">
+            <img src="imgs/bilums.jpg" alt="Bilums" style="width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/> 
+            <p>Bilums are traditional handwoven bags that hold cultural significance in Papua New Guinea, often used for carrying goods and as a symbol of identity.</p>
+          </div>
+          <div class="card">
+            <img src="imgs/fire-dance.jfif" alt="Fire Dance" style="width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <p>The binning fire dance is a traditional performance in Papua New Guinea that involves dancers performing around a fire, often during cultural festivals and ceremonies, showcasing the rich heritage of the region as well as keeping a strong bond with their ancestors.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="nature" style="margin-top:1.5rem">
+        <h2>Wildlife & Nature</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="imgs/bird-of-paradise.jpg" alt="Bird of paradise" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <h3>Birds-of-paradise</h3>
+            <p>PNG is the premier destination to see multiple species of birds-of-paradise in their natural habitats—an unforgettable wildlife highlight.</p>
+          </div>
+          <div class="card">
+            <img src="imgs/coral-reef.jfif" alt="Coral reef" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <h3>Marine biodiversity</h3>
+            <p>Part of the Coral Triangle, PNG's reefs rank among the most biodiverse on Earth, with world-class diving and snorkeling opportunities.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="activities" style="margin-top:1.5rem">
+        <h2>Adventure Activities</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Trekking</h3>
+            <img src="imgs/trekking.jpg" alt="Trekking" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <p>Beyond Kokoda, guided treks vary from village walks to multi-day expeditions in remote highlands.</p>
+          </div>
+          <div class="card">
+            <h3>Scuba & Snorkel</h3>
+            <img src="imgs/diving.jpg" alt="Diving" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <p>Liveaboards, house reefs, and coastal dive operators run trips around Tufi, Kimbe Bay, and Milne Bay.</p>
+          </div>
+          <div class="card">
+            <h3>Cultural Tours</h3>
+            <img src="imgs/tours.jpg" alt="Cultural tours" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
+            <p>Explore culturals from the mountains down to the islands with local guides who can share insights into customs, history, and daily life.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tips" style="margin-top:1.5rem">
+        <h2>Practical Travel Tips</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Safety</h3>
+            <p>Exercise caution in cities; use reputable guides and tourism operators. Check travel advisories before planning.</p>
+          </div>
+          <div class="card">
+            <h3>Health</h3>
+            <p>Vaccinations and malaria precautions are recommended depending on region. Carry a small medical kit and insect repellent.</p>
+          </div>
+          <div class="card">
+            <h3>Permits & Visas</h3>
+            <p>Visitors usually require a visa; some regions may require special permits for trekking or protected areas—confirm with operators.</p>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:1.5rem">
+        <h2>Gallery</h2>
+        <div class="card gallery">
+          <img src="imgs/blyths-hornbill.jpg" alt="Blyth's hornbill"/>
+          <img src="imgs/war-museum.jpg" alt="War museum"/>
+          <img src="imgs/coconut-house.jfif" alt="Coconut house"/>
+          <img src="imgs/flowers.jfif" alt="Flowers"/>
+        </div>
+      </section>
+
+      <section style="margin-top:1.5rem" class="card">
+        <h2>Plan Your Trip</h2>
+        <p style="margin:0;color:var(--muted)">Work with local operators for cultural experiences, ensure respectful photography practices, and allow extra time for internal travel—PNG's infrastructure can make journeys rewarding but slower-paced.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p style="margin:.25rem 0 .5rem 0">&copy; <span id="year"></span> Papua New Guinea Travel Guide • For informational purposes only</p>
+        <p style="margin:0;color:var(--muted)">Use local guides, respect communities, and support sustainable tourism.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
