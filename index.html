@@ -6,6 +6,16 @@
     <title>Discover Papua New Guinea — Tourism Guide</title>
     <meta name="description" content="A concise travel guide to Papua New Guinea: culture, nature, destinations, and practical tips." />
     <style>
+      .float-in
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all o.8s ease-out;
+      }
+
+      .float-in-show {
+        opacity: 1; 
+        transform: translateY(0); 
+      }
       :root{--accent:#00796b;--muted:#666;--bg:#f7fbfb;--card:#ffffff}
       html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;background-color:var(--bg);color:#111}
       body{background-image:url("./island-view.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed;min-height:100vh}
@@ -60,7 +70,7 @@
           <p><a class="cta" href="#top-destinations">Explore highlights</a></p>
         </div>
 
-        <div class="card" style="margin-top:1rem">
+        <div class="card float-in" style="margin-top:1rem">
           <h3>At a Glance</h3>
           <img src="rainforest.jpg" alt="Rainforest" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
           <p style="margin:0;color:var(--muted)">Quick snapshot to help you plan a visit.</p>
