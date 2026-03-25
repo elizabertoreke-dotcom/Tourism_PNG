@@ -6,13 +6,13 @@
     <title>Discover Papua New Guinea — Tourism Guide</title>
     <meta name="description" content="A concise travel guide to Papua New Guinea: culture, nature, destinations, and practical tips." />
     <style>
-      .float-in
+      .float-in {
       opacity: 0;
       transform: translateY(40px);
-      transition: all o.8s ease-out;
+      transition: all 0.8s ease-out;
       }
 
-      .float-in-show {
+      .float-in.show {
         opacity: 1; 
         transform: translateY(0); 
       }
@@ -41,7 +41,6 @@
   </head>
   <body>
     <div class="box"></div>
-  </body>
     <header>
       <div class="container">
         <div class="brand">
@@ -98,7 +97,7 @@
       <section id="top-destinations" style="margin-top:1.5rem">
         <h2>Top Destinations</h2>
         <div class="grid">
-          <div class="card">
+          <div class="card float-in">
             <img src="./kokoda-trail.jpg" alt="Kokoda trail" style="width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:.75rem"/>
             <h3>Kokoda Track</h3>
             <p>The historic Kokoda Track offers a challenging multi-day trek through the Owen Stanley Range, combining WWII history with remote mountain wilderness and warm local hospitality.</p>
@@ -227,7 +226,23 @@
     </footer>
 
     <script>
+      // Year
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Animation observer
+      const elements = document.querySelectorAll('.float-in');
+
+      const observer = new IntersectionObserver(entries => {
+        entries.foreach(entry => {
+          if (entry.isintersecting) {
+            entry.target.classlist.add('show');
+          }
+        });
+      }, {
+        threshold: 0.2
+      }); 
+
+      elements.forEach(el => observer.observe(el));
     </script>
   </body>
 </html>
