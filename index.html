@@ -39,6 +39,25 @@
 
         }
       }
+      .slogan { 
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        font-weight: bold; 
+        color: green;
+        text-aling; center;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: sloganFade 1s ease forward;
+        animation-delay: 0.6s;
+      }
+
+      @keyframes sloganFade {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+      }
       :root{--accent:#00796b;--muted:#666;--bg:#f7fbfb;--card:#ffffff}
       html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;background-color:var(--bg);color:#111}
       body{background-image:url("./island-view.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed;min-height:100vh}
@@ -79,6 +98,9 @@
           <a href="#nature">Nature</a>
           <a href="#tips">Travel Tips</a>
         </nav>
+        <div class="slogan">
+          Where Culture Meets Adventure
+        </div>
       </div>
     </header>
 
